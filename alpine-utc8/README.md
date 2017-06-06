@@ -5,5 +5,5 @@
 ## 使用方法
 
 ```bash
-docker run -itd name=myalpine wxmclub/alpine-utc8:3.6
+docker run -itd --name=myalpine wxmclub/alpine-utc8:3.6
 ```
