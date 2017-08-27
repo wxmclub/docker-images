@@ -1,11 +1,11 @@
-FROM redis:3.2.9-alpine
+FROM tomcat:8-alpine
 
 MAINTAINER WangXiaoMing <wxmclub@gmail.com>
 
 ENV TZ="Asia/Shanghai" \
     LANG="zh_CN.UTF-8"
 
-RUN apk add --no-cache bash tzdata \
+RUN apk add --no-cache tzdata \
     && rm /etc/localtime \
     && ln -s /usr/share/zoneinfo/$TZ /etc/localtime \
     && echo $TZ > /etc/timezone
