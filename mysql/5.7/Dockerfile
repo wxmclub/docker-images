@@ -7,4 +7,5 @@ ENV TZ="Asia/Shanghai" \
 
 RUN rm /etc/localtime \
     && ln -s /usr/share/zoneinfo/$TZ /etc/localtime \
-    && echo $TZ > /etc/timezone
+    && echo $TZ > /etc/timezone \
+    && echo "[mysqld]\ncharacter-set-server=utf8mb4\n[client]\ndefault-character-set=utf8mb4\n" > /etc/mysql/conf.d/wxmclub.mysql.cnf

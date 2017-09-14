@@ -14,3 +14,6 @@
 docker run -d --name=myredis -p 6379:6379 wxmclub/redis:3-alpine
 ```
 
+```bash
+docker run -it --rm wxmclub/redis:3-alpine redis-cli -h host -p 6379
+```
