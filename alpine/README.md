@@ -6,7 +6,8 @@
 
 ### 1.1 扩展内容
 
-* 时区，默认指定时区为东八区
+* 指定编码为：zh_CN.UTF-8
+* 时区，默认指定时区为"Asia/Shanghai"东八区
 * 增加bash命令
 
 ## 2. 使用方法
@@ -14,4 +15,5 @@
 ```bash
 docker run -itd --name=myalpine wxmclub/alpine:3.5
 docker run -itd --name=myalpine wxmclub/alpine:3.6
+docker run -itd --name=myalpine wxmclub/alpine:3.7
 ```
