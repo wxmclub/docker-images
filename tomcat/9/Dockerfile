@@ -7,4 +7,5 @@ ENV TZ="Asia/Shanghai" \
 
 RUN rm /etc/localtime \
     && ln -s /usr/share/zoneinfo/$TZ /etc/localtime \
-    && echo $TZ > /etc/timezone
+    && echo $TZ > /etc/timezone \
+    && rm -rf webapps/*

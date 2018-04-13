@@ -13,7 +13,7 @@
 ## 2. 使用方法
 
 ```bash
-docker run -d --name=mymysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123 wxmclub/mysql:5.7
+docker run -d --name=mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123 wxmclub/mysql:5.7
 ```
 
 进入容器，使用mysql登录，设置权限

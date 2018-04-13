@@ -1,4 +1,4 @@
-FROM tomcat:8-alpine
+FROM ruby:2.5-alpine
 
 MAINTAINER WangXiaoMing <wxmclub@gmail.com>
 
@@ -8,5 +8,4 @@ ENV TZ="Asia/Shanghai" \
 RUN apk add --no-cache tzdata \
     && rm /etc/localtime \
     && ln -s /usr/share/zoneinfo/$TZ /etc/localtime \
-    && echo $TZ > /etc/timezone \
-    && rm -rf webapps/*
+    && echo $TZ > /etc/timezone

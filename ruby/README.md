@@ -1,8 +1,8 @@
-# redis
+# ruby
 
 ## 1. 介绍
 
-引用官方[redis](https://hub.docker.com/_/redis/)镜像。
+引用官方[ruby](https://hub.docker.com/_/ruby/)镜像。
 
 ### 1.1 扩展内容
 
